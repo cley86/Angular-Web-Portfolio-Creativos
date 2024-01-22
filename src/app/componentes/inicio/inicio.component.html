@@ -1,0 +1,18 @@
+<div class="container">
+  <h3 *ngIf="mensajeBienvenida" class="text-center my-4">{{ mensajeBienvenida }}</h3>
+  <!-- Título agregado aquí -->
+  <h1 class="text-center my-4">Profesionales Creativos</h1>
+
+  <div class="row">
+    <div class="col-md-4" *ngFor="let especialista of especialistas">
+      <div class="card">
+        <img [src]="especialista.imagen" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{especialista.nombre}}</h5>
+          <p class="card-text">{{especialista.especializacion}}</p>
+          <p class="card-text">{{especialista.resumen}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

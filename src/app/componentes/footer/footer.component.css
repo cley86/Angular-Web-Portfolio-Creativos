@@ -1,0 +1,14 @@
+/* footer.component.css */
+.footer {
+  background-color: #343a40; /* Fondo oscuro */
+  color: white; /* Texto claro */
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Asegúrate de que el contenedor del footer tenga el estilo correcto */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
