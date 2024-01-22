@@ -1,1 +1,41 @@
-<p>contacto works!</p>
+<div class="container">
+  <div class="text-center mb-4">
+    <h1 class="display-4">¿Quieres contactar a nuestro equipo?</h1>
+  </div>
+<form [formGroup]="formularioContacto" (ngSubmit)="formSubmit()" class="needs-validation" novalidate>
+  <!-- Campo de Nombre -->
+  <div class="mb-3">
+    <label for="inputNombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="inputNombre" aria-describedby="emailHelp" formControlName="name" required>
+    <div id="emailHelp" class="form-text">Ingresa tu nombre completo.</div>
+    <!-- Mensaje de validación para el campo de Nombre -->
+    <div class="invalid-feedback">
+      Por favor, ingresa tu nombre.
+    </div>
+  </div>
+  <!-- Campo de Correo -->
+  <div class="mb-3">
+    <label for="inputEmail" class="form-label">Correo</label>
+    <input type="email" class="form-control" id="inputEmail" formControlName="addres" required>
+    <!-- Mensaje de validación para el campo de Correo -->
+    <div class="invalid-feedback">
+      Por favor, ingresa un correo válido.
+    </div>
+  </div>
+  <!-- Campo de Teléfono -->
+  <div class="mb-3">
+    <label for="inputTelefono" class="form-label">Teléfono</label>
+    <input type="tel" class="form-control" id="inputTelefono" formControlName="telefono" required>
+    <!-- Mensaje de validación para el campo de Teléfono -->
+    <div class="invalid-feedback">
+      Por favor, ingresa un número de teléfono válido.
+    </div>
+  </div>
+  <!-- Botón de Contactar -->
+  <button type="submit" class="btn btn-primary">Contactar</button>
+</form>
+  <div class="text-center">
+    <!-- Corrección: Asegúrate de cerrar correctamente el atributo alt con comillas dobles -->
+    <img src="/assets/img/contacto.png" class="img-fluid rounded w-75" alt="Descripción de la imagen">
+  </div>
+</div>
