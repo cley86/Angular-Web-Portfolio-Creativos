@@ -1,1 +1,12 @@
-<p>proyectos works!</p>
+<div class="container">
+
+    <h1 class="text-center my-4">Proyectos AI - Prompt Image</h1>
+
+    <div class="row">
+        <div class="col" *ngFor="let proyecto of proyectos">
+            <img [src]="proyecto.imageUrl" class="img-fluid">
+            <p>{{ proyecto.description }}</p>
+            <p>{{ proyecto.creationDate | date }}</p>
+        </div>
+    </div>
+</div>
