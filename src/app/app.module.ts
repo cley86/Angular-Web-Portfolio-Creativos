@@ -9,6 +9,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
